@@ -8,4 +8,4 @@ dependencies:
   - setuptools=36.4.0
   - pyyaml
 # ncwms
-  - ncwms2=2.2.8
+  - ncwms2=2.2.2

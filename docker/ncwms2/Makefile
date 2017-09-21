@@ -17,7 +17,7 @@ PYTHON_VERSION_MAJOR := 2
 
 # Anaconda
 ANACONDA_HOME ?= $(HOME)/anaconda
-CONDA_ENV := pavics
+CONDA_ENV := birdhouse
 CONDA_ENVS_DIR ?= $(HOME)/.conda/envs
 CONDA_ENV_PATH := $(CONDA_ENVS_DIR)/$(CONDA_ENV)
 CONDA_PINNED := $(APP_ROOT)/requirements/conda_pinned 
