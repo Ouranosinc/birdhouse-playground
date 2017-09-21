@@ -17,7 +17,7 @@ PYTHON_VERSION_MAJOR := 2
 
 # Anaconda
 ANACONDA_HOME ?= $(HOME)/anaconda
-CONDA_ENV := birdhouse
+CONDA_ENV := pavics
 CONDA_ENVS_DIR ?= $(HOME)/.conda/envs
 CONDA_ENV_PATH := $(CONDA_ENVS_DIR)/$(CONDA_ENV)
 CONDA_PINNED := $(APP_ROOT)/requirements/conda_pinned 
@@ -50,7 +50,7 @@ DOWNLOAD_CACHE := $(APP_ROOT)/downloads
 BUILDOUT_FILES := parts eggs develop-eggs bin .installed.cfg .mr.developer.cfg *.egg-info bootstrap-buildout.py *.bak.* $(DOWNLOAD_CACHE)
 
 # Docker
-DOCKER_IMAGE := pavics/$(APP_NAME)
+DOCKER_IMAGE := $(CONDA_ENV)/$(APP_NAME)
 DOCKER_CONTAINER := $(APP_NAME)
 
 # end of configuration
